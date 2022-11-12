@@ -1,15 +1,15 @@
-# SI 206 Project 2
-# Your name: Lauren Snerson
-# Your student id: 76785408
-# Your email: lsnerson@umich.edu
-# Who you worked with on this homework: Anna Kaplan and Madison Leidner
-
 from xml.sax import parseString
 from bs4 import BeautifulSoup
 import re
 import os
 import csv
 import unittest
+
+# SI 206 Project 2
+# Your name: Lauren Snerson
+# Your student id: 76785408
+# Your email: lsnerson@umich.edu
+# Who you worked with on this homework: Anna Kaplan and Madison Leidner
 
 
 def get_listings_from_search_results(html_file):
@@ -58,8 +58,6 @@ def get_listings_from_search_results(html_file):
         final_lst.append((title_lst[i], int(price_lst[i]), id_lst[i]))
         i += 1
     return final_lst
-
-
 
 def get_listing_information(listing_id):
     """
